@@ -35,7 +35,7 @@
         </property>
         <property name="packagesToScan">
             <list>
-                <value>com.spring.mvc</value>
+                <value>com.spring.mvc.entity</value>
            </list>
         </property>
         <property name="jpaProperties">
@@ -58,7 +58,7 @@
     
     <!-- 5. 配置 Spring Data Jpa -->
     <!-- base-package: 掃描 Repository Bean 所在的 package -->
-    <jpa:repositories base-package="com.spring.mvc"
+    <jpa:repositories base-package="com.spring.mvc.repository"
                       entity-manager-factory-ref="entityManagerFactory"
                       transaction-manager-ref="transactionManager">
     </jpa:repositories>
