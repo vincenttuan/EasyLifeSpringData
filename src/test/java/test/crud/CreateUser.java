@@ -20,5 +20,6 @@ public class CreateUser {
         ur.save(user);  // 方法結束(或是commit()時)才會進行資料庫的更新
         
         System.out.println("OK");
+        ctx.close();
     }
 }
