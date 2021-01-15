@@ -1,4 +1,4 @@
-package com.spring.mvc.entity.store;
+package com.spring.mvc.entity.food;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,8 +8,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Store")
-public class Store {
+@Table(name = "Food")
+public class Food {
     @Id
     @GeneratedValue
     private Long id;
@@ -18,7 +18,7 @@ public class Store {
     private String name;
     
     @ManyToOne
-    private StoreGroup storeGroup;
+    private FoodGroup foodGroup;
     
     public Long getId() {
         return id;
@@ -36,14 +36,13 @@ public class Store {
         this.name = name;
     }
 
-    public StoreGroup getStoreGroup() {
-        return storeGroup;
+    public FoodGroup getFoodGroup() {
+        return foodGroup;
     }
 
-    public void setStoreGroup(StoreGroup storeGroup) {
-        this.storeGroup = storeGroup;
+    public void setFoodGroup(FoodGroup foodGroup) {
+        this.foodGroup = foodGroup;
     }
-    
     
     
 }

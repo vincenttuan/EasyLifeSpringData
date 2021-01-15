@@ -1,5 +1,6 @@
-package com.spring.mvc.entity.store;
+package com.spring.mvc.entity.menu;
 
+import com.spring.mvc.entity.store.StoreBranch;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,8 +9,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Store")
-public class Store {
+@Table(name = "MenuGroup")
+public class MenuGroup {
     @Id
     @GeneratedValue
     private Long id;
@@ -18,7 +19,7 @@ public class Store {
     private String name;
     
     @ManyToOne
-    private StoreGroup storeGroup;
+    private StoreBranch storeBranch;
     
     public Long getId() {
         return id;
@@ -36,14 +37,12 @@ public class Store {
         this.name = name;
     }
 
-    public StoreGroup getStoreGroup() {
-        return storeGroup;
+    public StoreBranch getStoreBranch() {
+        return storeBranch;
     }
 
-    public void setStoreGroup(StoreGroup storeGroup) {
-        this.storeGroup = storeGroup;
+    public void setStoreBranch(StoreBranch storeBranch) {
+        this.storeBranch = storeBranch;
     }
-    
-    
     
 }

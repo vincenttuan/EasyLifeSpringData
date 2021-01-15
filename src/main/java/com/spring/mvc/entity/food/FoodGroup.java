@@ -1,25 +1,21 @@
-package com.spring.mvc.entity.store;
+package com.spring.mvc.entity.food;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Store")
-public class Store {
+@Table(name = "FoodGroup")
+public class FoodGroup {
     @Id
     @GeneratedValue
     private Long id;
     
     @Column
     private String name;
-    
-    @ManyToOne
-    private StoreGroup storeGroup;
-    
+
     public Long getId() {
         return id;
     }
@@ -35,15 +31,5 @@ public class Store {
     public void setName(String name) {
         this.name = name;
     }
-
-    public StoreGroup getStoreGroup() {
-        return storeGroup;
-    }
-
-    public void setStoreGroup(StoreGroup storeGroup) {
-        this.storeGroup = storeGroup;
-    }
-    
-    
     
 }
