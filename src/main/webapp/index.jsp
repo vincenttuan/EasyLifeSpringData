@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html>
     <head>
         <title>Start Page</title>
@@ -11,3 +11,4 @@
         <h1>Hello World!</h1>
     </body>
 </html>
+
