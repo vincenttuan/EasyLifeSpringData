@@ -19,54 +19,16 @@
 
             <div id="main">
                 <div class="header">
-                    <h1>主標題</h1>
-                    <h2>副標題</h2>
+                    <h1>EasyLife</h1>
+                    <h2>Table Schema</h2>
                 </div>
                 <table class="pure-table" style="border: none;">
                     <td valign="top">
-                        <!-- 表單 -->
-                        <form class="pure-form" 
-                                   method="post" 
-                                   action="${pageContext.request.contextPath}/mvc/member/" >
-
-                        </form>
+                        <!-- Table schema -->
+                        <img src="${pageContext.request.contextPath}/get_local_file.jsp"><p />
+                        <img src="${pageContext.request.contextPath}/image/easylife_db.jpg">
                     </td>
-                    <td valign="top">
-                        <!-- 列表 -->
-                        <form class="pure-form">
-                            <fieldset>
-                                <legend>OOO list</legend>
-                                <table class="pure-table pure-table-bordered" width="100%">
-                                    <thead>
-                                        <tr>
-                                            <th>欄位一</th>
-                                            <th>欄位二</th>
-                                        </tr>
-                                    </thead>
-
-                                    <tbody>
-                                        <tr>
-                                            <td>A</td>
-                                            <td>B</td>
-                                        </tr>
-
-                                    </tbody>
-                                </table> 
-                            </fieldset>
-                        </form>
-                    </td>
-                    <td valign="top">
-                        <!-- 圖表 -->
-                        <form class="pure-form">
-                            <fieldset>
-                                <legend>OOO chart</legend>
-                                
-                            </fieldset>
-                        </form>
-                    </td>
-                </table>   
-
-
+                </table>
             </div>
         </div>
 
