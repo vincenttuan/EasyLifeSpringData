@@ -25,7 +25,6 @@
                 <table class="pure-table" style="border: none;">
                     <td valign="top">
                         <!-- Table schema -->
-                        <img src="${pageContext.request.contextPath}/get_local_file.jsp"><p />
                         <img src="${pageContext.request.contextPath}/image/easylife_db.jpg">
                     </td>
                 </table>

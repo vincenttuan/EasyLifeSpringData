@@ -9,8 +9,8 @@
             OOO 您好
         </a>
         <ul class="pure-menu-list">
-            <li class="pure-menu-item${fn:contains(pageContext.request.requestURI, 'dept.jsp')?' menu-item-divided pure-menu-selected':''}">
-                <a href="${pageContext.request.contextPath}/mvc/member/" class="pure-menu-link">Member</a>
+            <li class="pure-menu-item${fn:contains(pageContext.request.requestURI, 'store_group.jsp')?' menu-item-divided pure-menu-selected':''}">
+                <a href="${pageContext.request.contextPath}/mvc/store_group/" class="pure-menu-link">Store Group</a>
             </li>
             
         </ul>
