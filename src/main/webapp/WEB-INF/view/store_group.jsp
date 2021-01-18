@@ -29,7 +29,7 @@
                                    method="POST" 
                                    action="${pageContext.request.contextPath}/mvc/store_group/" >
                             <fieldset>
-                                <legend>User form</legend>
+                                <legend>Store Group form</legend>
                                 <form:input path="id" readonly="true" /><p />
                                 <form:input path="name" placeholder="請輸入StoreGroup名稱" /><p />
                                 <input type="text" id="_method" name="_method"  readonly="true" value="${ _method }" /><p />

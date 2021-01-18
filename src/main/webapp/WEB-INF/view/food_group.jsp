@@ -29,7 +29,7 @@
                                    method="POST" 
                                    action="${ pageContext.request.contextPath }/mvc/food_group/" >
                             <fieldset>
-                                <legend>Food Group</legend>
+                                <legend>Food Group form</legend>
                                 <form:input path="id" readonly="true" /><p />
                                 <form:input path="name" placeholder="請輸入FoodGroup名稱" /><p />
                                 <input type="text" id="_method" name="_method" readonly="true" value="${ _method }" /><p />
